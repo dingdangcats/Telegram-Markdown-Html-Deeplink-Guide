@@ -91,6 +91,7 @@ __下划线文本__
 要在文本消息中提及（mention）某人，或使用深度链接（Deep link），可按以下方式操作。这类似于超链接功能，但是链接使用 Telegram 客户端软件可以解析的协议。
 
 **### 语法示例**
+
 ```
 [自定义超链接文本](tg://user?id=用户UID)
 [叮当猫](tg://user?id=123456789)
@@ -110,18 +111,16 @@ t.me/proxy?server=<server>&port=<port>&secret=<secret>
 tg://proxy?server=<server>&port=<port>&secret=<secret>         #电报代理
 t.me/addtheme/<name>
 tg://addtheme?slug=<name>   #name=主题包
-
 ```
 
 **###注解**
+```
 tg://user?id={UID}：{UID} 是用户的唯一标识码，数字格式，机器人也有相应的识别码。
 tg://resolve?domain={Username}：{Username} 是用户名，由英文、数字、下划线组成。
 tg://join?invite={InviteHash}：{InviteHash} 是邀请链接的哈希部分，通常为 22 位字符。
 tg://setlanguage?lang={LangPackName}：{LangPackName} 是语言包的短名称。
 tg://addstickers?set={PacksetName}：{PacksetName} 是贴纸包的短名称。
 tg://resolve?domain={Username}&post={MessageId}：{MessageId} 是聊天室内消息的唯一标识码。
-
-
 ```
 
 
