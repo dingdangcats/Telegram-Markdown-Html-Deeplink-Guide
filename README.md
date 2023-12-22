@@ -9,7 +9,8 @@
 
 ## 前言
 
-随着 Telegram 的版本更新，本文档中的教程和信息可能会过时。
+Telegram 支持信息的基本格式。您可以在机器人信息中使用粗体、斜体、下划线、删除线和扰流文字，以及内嵌链接和预设格式的代码。
+Telegram 客户端会相应地呈现它们。您可以直接指定文本实体，也可以使用下划线样式或 HTML 样式的格式。
 
 ## 文本消息的格式
 
@@ -19,11 +20,12 @@
 
 ## 解析模式
 
-如果你在使用机器人 Bot API，需要通过设置解析模式（`parse_mode`）来应用文本格式，例如：在 `sendMessage` 方法中设置 `parse_mode=HTML` 或 `parse_mode=Markdown`。然后，可以在 `text` 或 `caption` 参数中使用以下语法来发送特殊格式的消息。
+如果你在使用机器人 Bot API，需要通过设置解析模式（`parse_mode`）来应用文本格式。
+例如：在 `sendMessage` 方法中设置 `parse_mode=HTML` 或 `parse_mode=Markdown`。然后，可以在 `text` 或 `caption` 参数中使用以下语法来发送特殊格式的消息。
 
-### Markdown 语法示例
+### Markdown 语法示例v1
 
-```markdown
+```markdown v1.0
 *粗体文本*
 _斜体文本_
 __下划线文本__
@@ -31,10 +33,27 @@ __下划线文本__
 *粗体 _粗斜体 ~~粗斜体删除线~~ __粗斜体下划线___ 粗体*
 [超链接文本](链接地址)
 `等宽字体`
-多行等宽字体
-文本区块
+```多行等宽字体```
 ```
 
+```markdown v2.0
+
+*bold \*text*
+_italic \*text_
+__underline__
+~strikethrough~
+||spoiler||
+*bold _italic bold ~italic bold strikethrough ||italic bold strikethrough spoiler||~ __underline italic bold___ bold*
+[inline URL](http://www.example.com/)
+[inline mention of a user](tg://user?id=123456789)
+![👍](tg://emoji?id=5368324170671202286)
+`inline fixed-width code`
+"```
+pre-formatted fixed-width code block
+```"
+```
+
+这两个版本都是可用的
 
 ### HTML 语法示例
 
