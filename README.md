@@ -69,8 +69,9 @@ __下划线文本__
 <code>等宽字体</code>
 <pre>多行等宽字体
 文本区块</pre>
+```
 
-**### 语法示例 v2.0（2020-2023版本）**
+### 语法示例 v2.0（2020-2023版本）
 ```
 <b>粗体</b>, <strong>粗体</strong>
 <i>斜体</i>, <em>斜体</em>
@@ -86,12 +87,11 @@ __下划线文本__
 <pre><code class="language-python">用Python编程语言编写的预格式化固定宽度代码块</code></pre>
 ```
 
-
-**##内置链接**
+## 内置链接
 
 要在文本消息中提及（mention）某人，或使用深度链接（Deep link），可按以下方式操作。这类似于超链接功能，但是链接使用 Telegram 客户端软件可以解析的协议。
 
-**### 语法示例**
+### 语法示例
 
 ```
 [自定义超链接文本](tg://user?id=用户UID)
@@ -104,6 +104,8 @@ __下划线文本__
 [添加贴纸包](tg://addstickers?set=贴纸包名称)
 [跳转到私人群组中的目标消息](https://t.me/c/群组ID/消息ID)
 [跳转到公开群组中的目标消息](https://t.me/用户名/消息ID)
+```
+
 - t.me/+<hash> 
 - tg://join?invite=<hash>    #加好友or群
 - t.me/addlist/<slug>
@@ -151,9 +153,10 @@ __下划线文本__
 - `t.me/login/<code>` # 登录码链接
 - `tg://login?code=<code>` # 登录码链接
 - `t.me/invoice/<slug>` # 发票链接
-```
 
-**###注解**
+
+### 注解
+
 ```
 tg://user?id={UID}：{UID} 是用户的唯一标识码，数字格式，机器人也有相应的识别码。
 tg://resolve?domain={Username}：{Username} 是用户名，由英文、数字、下划线组成。
