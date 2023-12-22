@@ -85,8 +85,9 @@ __下划线文本__
 <pre>预格式化固定宽度代码块</pre>
 <pre><code class="language-python">用Python编程语言编写的预格式化固定宽度代码块</code></pre>
 ```
-**
-##内置链接**
+
+
+**##内置链接**
 
 要在文本消息中提及（mention）某人，或使用深度链接（Deep link），可按以下方式操作。这类似于超链接功能，但是链接使用 Telegram 客户端软件可以解析的协议。
 
@@ -103,14 +104,53 @@ __下划线文本__
 [添加贴纸包](tg://addstickers?set=贴纸包名称)
 [跳转到私人群组中的目标消息](https://t.me/c/群组ID/消息ID)
 [跳转到公开群组中的目标消息](https://t.me/用户名/消息ID)
-t.me/+<hash> 
-tg://join?invite=<hash>    #加好友or群
-t.me/addlist/<slug>
-tg://addlist?slug=<slug>     #聊天文件夹链接
-t.me/proxy?server=<server>&port=<port>&secret=<secret>   
-tg://proxy?server=<server>&port=<port>&secret=<secret>         #电报代理
-t.me/addtheme/<name>
-tg://addtheme?slug=<name>   #name=主题包
+- t.me/+<hash> 
+- tg://join?invite=<hash>    #加好友or群
+- t.me/addlist/<slug>
+- tg://addlist?slug=<slug>     #聊天文件夹链接
+- t.me/proxy?server=<server>&port=<port>&secret=<secret>   
+- tg://proxy?server=<server>&port=<port>&secret=<secret>         #电报代理
+- t.me/addtheme/<name>
+- tg://addtheme?slug=<name>   #name=主题包
+- `tg://user?id=<id>` # 用户 ID
+- `tg://emoji?id=<id>` # 自定义表情符号 ID
+- `t.me/<bot_username>?start=<parameter>` # 链接到机器人并可能传递启动参数
+- `tg://resolve?domain=<bot_username>&start=<parameter>` # 链接到机器人并可能传递启动参数
+- `t.me/<username>?videochat` # 链接到群组的视频聊天
+- `t.me/<username>?videochat=<invite_hash>` # 指定邀请码的视频聊天
+- `t.me/<username>?livestream` # 链接到频道的直播
+- `t.me/<username>?livestream=<invite_hash>` # 指定邀请码的直播
+- `t.me/<username>?voicechat` # 链接到群组的语音聊天
+- `t.me/<username>?voicechat=<invite_hash>` # 指定邀请码的语音聊天
+- `tg://resolve?domain=<username>&videochat` # 链接到群组的视频聊天
+- `tg://resolve?domain=<username>&videochat=<invite_hash>` # 指定邀请码的视频聊天
+- `tg://resolve?domain=<username>&livestream` # 链接到频道的直播
+- `tg://resolve?domain=<username>&livestream=<invite_hash>` # 指定邀请码的直播
+- `tg://resolve?domain=<username>&voicechat` # 链接到群组的语音聊天
+- `tg://resolve?domain=<username>&voicechat=<invite_hash>` # 指定邀请码的语音聊天
+- `t.me/addstickers/<slug>` # 导入贴纸集
+- `t.me/addemoji/<slug>` # 导入自定义表情符号贴纸集
+- `tg://addstickers?set=<slug>` # 导入贴纸集
+- `tg://addemoji?set=<slug>` # 导入自定义表情符号贴纸集
+- `t.me/proxy?server=<server>&port=<port>&secret=<secret>` # MTProxy 链接
+- `tg://proxy?server=<server>&port=<port>&secret=<secret>` # MTProxy 链接
+- `t.me/socks?server=<server>&port=<port>&user=<user>&pass=<pass>` # Socks5 代理链接
+- `tg://socks?server=<server>&port=<port>&user=<user>&pass=<pass>` # Socks5 代理链接
+- `t.me/addtheme/<name>` # 安装主题
+- `tg://addtheme?slug=<name>` # 安装主题
+- `t.me/bg/<slug>?mode=<mode>` # 图像壁纸
+- `tg://bg?slug=<slug>&mode=<mode>` # 图像壁纸
+- `t.me/bg/<hex_color>` # 纯色填充壁纸
+- `tg://bg?color=<hex_color>` # 纯色填充壁纸
+- `t.me/bg/<top_color>-<bottom_color>?rotation=<rotation>` # 渐变填充壁纸
+- `tg://bg?gradient=<top_color>-<bottom_color>&rotation=<rotation>` # 渐变填充壁纸
+- `t.me/bg/<hex_color1>~<hex_color2>~<hex_color3>` # 自由渐变填充壁纸
+- `tg://bg?gradient=<hex_color1>~<hex_color2>~<hex_color3>` # 自由渐变填充壁纸
+- `t.me/bg/<slug>?intensity=<intensity>&bg_color=<bg_color>&mode=<mode>` # 图案壁纸
+- `tg://bg?slug=<slug>&intensity=<intensity>&bg_color=<bg_color>&mode=<mode>` # 图案壁纸
+- `t.me/login/<code>` # 登录码链接
+- `tg://login?code=<code>` # 登录码链接
+- `t.me/invoice/<slug>` # 发票链接
 ```
 
 **###注解**
